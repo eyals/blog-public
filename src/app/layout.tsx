@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -48,6 +49,11 @@ export default function RootLayout({
         <div className="min-h-screen">
           {children}
         </div>
+        <Script
+          data-goatcounter="https://eyalblog.goatcounter.com/count"
+          src="https://gc.zgo.at/count.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -10,7 +10,11 @@
       "Bash(npm test:*)",
       "Bash(find:*)",
       "Bash(node:*)",
-      "Bash(gh issue:*)"
+      "Bash(gh issue:*)",
+      "Bash(gh pr list --repo eyals/blog-public)",
+      "Bash(gh pr view:*)",
+      "Bash(git checkout:*)",
+      "Bash(gh pr merge:*)"
     ],
     "deny": []
   },
