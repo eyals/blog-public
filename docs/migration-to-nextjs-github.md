@@ -4,10 +4,10 @@
 
 This document outlines the architecture for a decoupled, Git-based blogging platform. The design prioritizes simplicity, portability, and performance.
 
--   **Decoupled Systems:** The content management (Admin Panel) and the public-facing website (Blog) are two separate applications. This separation simplifies development, deployment, and maintenance.
--   **Git as a Database:** A single GitHub repository serves as the "source of truth" for all content. This makes the content highly portable, version-controlled, and easy to back up.
--   **Static First:** The public blog is a fully static site, pre-generated for maximum performance, security, and scalability.
--   **Self-Contained Content:** Each blog post and its associated media (images) are stored together in the same folder, ensuring that content is always self-contained.
+- **Decoupled Systems:** The content management (Admin Panel) and the public-facing website (Blog) are two separate applications. This separation simplifies development, deployment, and maintenance.
+- **Git as a Database:** A single GitHub repository serves as the "source of truth" for all content. This makes the content highly portable, version-controlled, and easy to back up.
+- **Static First:** The public blog is a fully static site, pre-generated for maximum performance, security, and scalability.
+- **Self-Contained Content:** Each blog post and its associated media (images) are stored together in the same folder, ensuring that content is always self-contained.
 
 ---
 
@@ -15,13 +15,13 @@ This document outlines the architecture for a decoupled, Git-based blogging plat
 
 The platform consists of two distinct Next.js applications and the services that connect them.
 
-| Component | Technology/Service | Purpose | Hosted At |
-| :--- | :--- | :--- | :--- |
-| **1. Admin Panel** | Next.js App | A private, web-based interface for creating, editing, and managing blog posts and media. | `admin.yourdomain.com` |
-| **2. Public Blog** | Next.js App | A public, statically generated website that displays the published blog posts. | `yourdomain.com` |
-| **3. Content Source** | GitHub Repository | Acts as the database, storing all markdown files and images. | `github.com/your/repo` |
-| **4. Hosting & Deployment** | Vercel / Netlify | A platform that hosts both Next.js applications and automates the build/deployment process via Git. | (Handles both domains) |
-| **5. Authentication** | NextAuth.js (or similar) | Secures the Admin Panel, ensuring only the authorized author can access it. | Integrated into Admin Panel |
+| Component                   | Technology/Service       | Purpose                                                                                             | Hosted At                   |
+| :-------------------------- | :----------------------- | :-------------------------------------------------------------------------------------------------- | :-------------------------- |
+| **1. Admin Panel**          | Next.js App              | A private, web-based interface for creating, editing, and managing blog posts and media.            | `admin.yourdomain.com`      |
+| **2. Public Blog**          | Next.js App              | A public, statically generated website that displays the published blog posts.                      | `yourdomain.com`            |
+| **3. Content Source**       | GitHub Repository        | Acts as the database, storing all markdown files and images.                                        | `github.com/your/repo`      |
+| **4. Hosting & Deployment** | Vercel / Netlify         | A platform that hosts both Next.js applications and automates the build/deployment process via Git. | (Handles both domains)      |
+| **5. Authentication**       | NextAuth.js (or similar) | Secures the Admin Panel, ensuring only the authorized author can access it.                         | Integrated into Admin Panel |
 
 ---
 
@@ -44,21 +44,21 @@ The content's structure within the GitHub repository is file and folder-based. T
 │   └── blog-logo.png
 ```
 
--   **`posts/{post-id}/`**: A dedicated folder for each blog post, named after a permanent unique ID.
--   **`index.md`**: The file containing the post's content and metadata.
-    -   **Frontmatter**: The file begins with YAML frontmatter. The `id` is permanent, while the `slug` is used for the public URL.
-        ```yaml
-        ---
-        id: "550e8400-e29b-41d4-a716-446655440000"
-        title: "My First Post"
-        slug: "my-first-post"
-        published: true
-        publish_date: "2025-07-06"
-        ---
-        ```
-    -   **Content**: The body of the post is written in Markdown.
-    -   **Image References**: Images are referenced using relative paths (e.g., `./hero-image.jpg`).
--   **Image Files**: All images for a post are stored in the same folder as its `index.md`.
+- **`posts/{post-id}/`**: A dedicated folder for each blog post, named after a permanent unique ID.
+- **`index.md`**: The file containing the post's content and metadata.
+  - **Frontmatter**: The file begins with YAML frontmatter. The `id` is permanent, while the `slug` is used for the public URL.
+    ```yaml
+    ---
+    id: "550e8400-e29b-41d4-a716-446655440000"
+    title: "My First Post"
+    slug: "my-first-post"
+    published: true
+    publish_date: "2025-07-06"
+    ---
+    ```
+  - **Content**: The body of the post is written in Markdown.
+  - **Image References**: Images are referenced using relative paths (e.g., `./hero-image.jpg`).
+- **Image Files**: All images for a post are stored in the same folder as its `index.md`.
 
 ---
 
@@ -75,10 +75,10 @@ The content's structure within the GitHub repository is file and folder-based. T
 
 1.  **User Action**: The author clicks "New Post" in the Admin Panel.
 2.  **Admin Panel (Backend)**:
-    -   Generates a new permanent unique ID (e.g., a UUID).
-    -   Creates a new folder named after this ID in the `/posts` directory.
-    -   Creates a new `index.md` file inside this folder, pre-populated with the `id` and `published: false`.
-    -   Commits these changes to the GitHub repository.
+    - Generates a new permanent unique ID (e.g., a UUID).
+    - Creates a new folder named after this ID in the `/posts` directory.
+    - Creates a new `index.md` file inside this folder, pre-populated with the `id` and `published: false`.
+    - Commits these changes to the GitHub repository.
 3.  **Admin Panel (Frontend)**: The user is redirected to the editor for this new post, ready to write content and upload media.
 
 ### Flow C: Editing a Draft Post
@@ -94,9 +94,9 @@ The content's structure within the GitHub repository is file and folder-based. T
 1.  **User Action**: While editing a post in the Admin Panel, the author uploads an image.
 2.  **Admin Panel (Frontend)**: Sends the image file to its backend API, along with the post's permanent ID.
 3.  **Admin Panel (Backend)**:
-    -   Saves the image file to the correct post folder (e.g., `/posts/{post-id}/new-image.png`).
-    -   Commits and pushes the new image file.
-    -   Gets the permanent raw URL for the new image from GitHub.
+    - Saves the image file to the correct post folder (e.g., `/posts/{post-id}/new-image.png`).
+    - Commits and pushes the new image file.
+    - Gets the permanent raw URL for the new image from GitHub.
 4.  **Admin Panel (Frontend)**: Receives the raw GitHub URL and uses it to display a preview of the image in the editor. The markdown content itself still uses the simple relative path (`./new-image.png`).
 
 ### Flow E: Publishing a Post
@@ -104,11 +104,11 @@ The content's structure within the GitHub repository is file and folder-based. T
 1.  **User Action**: The author edits a post, adds a `slug`, changes the frontmatter to `published: true`, and clicks "Save".
 2.  **Admin Panel (Backend)**: Commits the updated `index.md` file to the `main` branch of the GitHub repository.
 3.  **Deployment Platform**:
-    -   A deployment is triggered by the push.
-    -   The build script inspects the commit, sees that a modified file has `published: true`, and proceeds.
-    -   The platform runs the `next build` command on the **Public Blog** application.
-    -   The Public Blog app reads all files from the GitHub repository. For each post with `published: true`, it generates a static HTML page using its `slug` for the URL.
-    -   The newly generated static site is deployed and becomes live at `yourdomain.com`.
+    - A deployment is triggered by the push.
+    - The build script inspects the commit, sees that a modified file has `published: true`, and proceeds.
+    - The platform runs the `next build` command on the **Public Blog** application.
+    - The Public Blog app reads all files from the GitHub repository. For each post with `published: true`, it generates a static HTML page using its `slug` for the URL.
+    - The newly generated static site is deployed and becomes live at `yourdomain.com`.
 
 ---
 
@@ -133,6 +133,7 @@ This section describes the complete data flow from content creation to the live 
 # Migration plan
 
 ## Step 1: Foundational Setup (No Code Changes)
+
 Task: Prepare the new content repository and safeguard your current project.
 
 ### Outcome:
@@ -144,6 +145,7 @@ Your existing project is safe, with the v1.0-legacy tag pointing to its current 
 Testable State: Your current application works exactly as it did before. Nothing has been broken.
 
 ## Step 2: Build a Standalone "Git Backend"
+
 Task: Create a small, independent set of serverless functions (e.g., using Node.js) that can perform CRUD operations on the new public-blog GitHub repository. These functions will not be connected to your UI yet.
 
 ### Outcome:
@@ -153,6 +155,7 @@ You have a set of API endpoints. For example, you can use a tool like Postman or
 Testable State: You can manually test every backend function (create, read, update, delete posts/images) and verify the results by checking the GitHub repository. Your existing admin app is still untouched and fully functional, pointing to Firestore.
 
 ## Step 3: Rewire the Admin App to the New Backend
+
 Task: Modify the data service files (like src/services/posts.ts) in your existing Vite/React admin app. Instead of calling Firestore, they will now call the new "Git Backend" API endpoints you created in Step 2.
 
 ### Outcome:
@@ -162,6 +165,7 @@ Your admin UI looks and feels the same, but when you click "Save," it now saves 
 Testable State: Your admin app is fully functional again. You can create a new post and see it appear in the GitHub repo. The only difference is the data source.
 
 ### Step 4: One-Time Content Migration
+
 Task: Write and run a script to pull all posts from Firestore and use your new "Git Backend" API to save each one into the public-blog repository.
 
 ### Outcome:
@@ -171,6 +175,7 @@ The public-blog repository is now fully populated with all your historical conte
 Testable State: Your admin app now lists all your posts, old and new, reading them directly from the Git repository. At this point, Firestore is no longer being used for content.
 
 ## Step 5: Build and Deploy the New Public Blog
+
 Task: Create a new, separate Next.js project for the public-blog. Build the UI and connect it to its own GitHub repository for content. Deploy it.
 
 ### Outcome:
@@ -180,6 +185,7 @@ Your new static blog is live at yourdomain.com, serving content from the Git rep
 Testable State: You have two working applications: the old admin panel (still on Vite) and the new public blog (on Next.js). You can make a change in the admin, save it, and trigger a rebuild of the public site to see the change live.
 
 ## Step 6: (Optional) Migrate the Admin App to Next.js
+
 Task: Now that everything works, you can optionally replace the original Vite admin app with a new Next.js version. This involves moving your React components into a new Next.js project and integrating the "Git Backend" functions directly into its /pages/api directory.
 
 ### Outcome:

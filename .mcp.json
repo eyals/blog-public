@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "puppeteer": {
+      "type": "stdio",
+      "command": "/Users/eyal/.nvm/versions/node/v18.20.8/bin/node",
+      "args": [
+        "/Users/eyal/.nvm/versions/node/v18.20.8/lib/node_modules/@modelcontextprotocol/server-puppeteer/dist/index.js"
+      ],
+      "env": {}
+    },
+    "console-ninja": {
+      "command": "npx",
+      "args": ["-y", "-c", "node ~/.console-ninja/mcp/"]
+    }
+  }
+}
