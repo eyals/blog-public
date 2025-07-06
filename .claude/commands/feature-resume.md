@@ -1,0 +1,6 @@
+- Look into docs/features and find the last 3 features based on the timestamp in the folder name.
+- Present them to me in a numbered list. For each one that has a summary file in the folder - mark with ✅.
+- Once I choose one, look through the other files in that folder, and try to understand what the feature is about, what Github issue it is related to, what is the status of the implementation, and what are the next steps.
+- Once you have a clear understanding of the feature, present it to me for approval
+- Read carefully through the 'Implementation' section in `docs/development/feature-guide.md`
+- Continue with the implementation. If you're not sure what to do, suggest options.

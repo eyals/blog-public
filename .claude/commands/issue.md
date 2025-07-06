@@ -1,0 +1,2 @@
+- Use `gh issue view $ARGUMENTS --repo eyals/gush-backend` to get issue details.
+- Follow the new feature guide in docs/development/feature-guide.md

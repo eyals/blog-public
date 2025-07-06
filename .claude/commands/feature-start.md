@@ -1,0 +1,4 @@
+- First, make sure we're on main branch. If not - ask to merge curren branch.
+- Use `gh issue list --repo (repo name from CLAUDE.md) --state open` to get a list of open issues.
+- Group them by priority, based on labels P1, P2, etc, or no P label. Ask the user to select which one to work on, and then follow docs/feature-guide.md.
+- Once the user selects an issue, or provides a custom brief instead of an issue, follow the feature guide in docs/development/feature-guide.md

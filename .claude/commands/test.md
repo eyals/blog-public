@@ -1,0 +1,5 @@
+- Look at the testing plan and the feature docs to understand what needs to be tested.
+- Look under scripts/puppeteer-tests for existing tests that might be relevant.
+- If relevant, update existing tests.
+- Add new tests if needed. Use the TEST_USER_EMAIL and TEST_USER_PASSWORD environment variables to authenticate.
+- Run the relevant tests, log results in the scratchpad and fix any critical failures
