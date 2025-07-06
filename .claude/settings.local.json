@@ -13,5 +13,9 @@
       "Bash(gh issue:*)"
     ],
     "deny": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "puppeteer",
+    "console-ninja"
+  ]
 }

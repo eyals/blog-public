@@ -1,7 +1,7 @@
 # CLAUDE.md
 
 - **Project Name:** - Portable Blog Platform
-- **GitHub Repository**: eyals/blog-admin
+- **GitHub Repository**: eyals/blog-public
 - **Firebase project**: eyal-blog
 
 ## Goal
