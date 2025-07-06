@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "serve": "npx serve out -p 6666",
     "test": "jest",
     "test:e2e": "jest scripts/puppeteer-tests"
   },
