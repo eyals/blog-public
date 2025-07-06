@@ -1,5 +1,5 @@
 ---
-title: "Essential Maintenance for Your Acoustic Guitar"
+title: "Essential Maintenance for Your Acoustic Guitar1"
 excerpt: "Keep your acoustic guitar playing and sounding its best with these simple, regular maintenance tips. A little care goes a long way in preserving your instrument's health and playability."
 seo_title: "Acoustic Guitar Maintenance Tips for Players"
 publish_date: "2025-06-28"
