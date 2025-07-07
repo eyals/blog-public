@@ -32,6 +32,11 @@ export function getSortedPostsData(): PostMetadata[] {
   const allPostsData: PostMetadata[] = [];
 
   for (const folder of postFolders) {
+    // Skip _trash folder
+    if (folder === '_trash') {
+      continue;
+    }
+    
     const folderPath = path.join(postsDirectory, folder);
     const indexFile = path.join(folderPath, 'index.md');
     
@@ -74,6 +79,11 @@ export async function getPostData(slug: string): Promise<PostData | null> {
   let postFolder = null;
   
   for (const folder of postFolders) {
+    // Skip _trash folder
+    if (folder === '_trash') {
+      continue;
+    }
+    
     const folderPath = path.join(postsDirectory, folder);
     const indexFile = path.join(folderPath, 'index.md');
     
@@ -125,6 +135,11 @@ export function getAllPostSlugs(): string[] {
   const slugs: string[] = [];
 
   for (const folder of postFolders) {
+    // Skip _trash folder
+    if (folder === '_trash') {
+      continue;
+    }
+    
     const folderPath = path.join(postsDirectory, folder);
     const indexFile = path.join(folderPath, 'index.md');
     
