@@ -1,8 +1,8 @@
 ---
-title: "Maintenance for Your Acoustic Guitar1"
+title: "Maintenance for Your Acoustic Guitar5"
 excerpt: "Keep your acoustic guitar playing and sounding its best with these simple, regular maintenance tips. A little care goes a long way in preserving your instrument's health and playability."
 seo_title: "Acoustic Guitar Maintenance Tips for Players"
-publish_date: "2025-06-28"
+publish_date: "2025-06-05"
 slug: "acoustic-guitar-maintenance"
 image: "https://www.musikalessons.com/blog/wp-content/uploads/2017/01/guitar-maintenance.jpg"
 published: true
