@@ -21,10 +21,12 @@ jobs:
         zip -r "posts-backup-${TIMESTAMP}.zip" posts/
         echo "BACKUP_FILE=posts-backup-${TIMESTAMP}.zip" >> $GITHUB_ENV
         
-    - name: Upload to Google Drive (temporarily broken for webhook test)
-      run: |
-        echo "Intentionally failing to test webhook notification"
-        exit 1
+    - name: Upload to Google Drive
+      uses: mathisve/gdrive-upload-action@main
+      with:
+        filename: ${{ env.BACKUP_FILE }}
+        credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
+        folderId: ${{ secrets.GDRIVE_FOLDER_ID }}
         
   notify-failure:
     runs-on: ubuntu-latest
