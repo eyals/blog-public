@@ -22,7 +22,7 @@ jobs:
         echo "BACKUP_FILE=posts-backup-${TIMESTAMP}.zip" >> $GITHUB_ENV
         
     - name: Upload to Google Drive
-      uses: mathisve/gdrive-upload-action@v1
+      uses: mathisve/gdrive-upload-action@main
       with:
         filename: ${{ env.BACKUP_FILE }}
         credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
