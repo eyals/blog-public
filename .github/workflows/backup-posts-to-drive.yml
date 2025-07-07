@@ -14,12 +14,19 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Upload posts to Google Drive
-      uses: Jodebu/upload-to-drive@v1
+    - name: Create posts backup archive
+      run: |
+        # Create a timestamped zip file of the posts directory
+        TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+        zip -r "posts-backup-${TIMESTAMP}.zip" posts/
+        echo "BACKUP_FILE=posts-backup-${TIMESTAMP}.zip" >> $GITHUB_ENV
+        
+    - name: Upload to Google Drive
+      uses: mathisve/gdrive-upload-action@v1
       with:
-        target: posts
+        filename: ${{ env.BACKUP_FILE }}
         credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
-        folder: ${{ secrets.GDRIVE_FOLDER_ID }}
+        parent_folder_id: ${{ secrets.GDRIVE_FOLDER_ID }}
         
   # TODO: Add email notification setup
   # notify-failure:
