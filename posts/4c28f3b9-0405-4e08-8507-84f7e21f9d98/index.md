@@ -8,4 +8,6 @@ published: true
 featured: false
 ---
 
-[object Object]
+# Hello
+
+This is the post!
