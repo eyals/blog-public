@@ -41,10 +41,10 @@ Sweat, skin oils, and dust can build up on your guitar, dulling the finish and c
 
 * **During String Changes:** This is the perfect time for a deeper clean. Use a small amount of specialized guitar polish on the body. For the fretboard (if it's unfinished rosewood or ebony), use a fretboard conditioner like lemon oil to clean off grime and hydrate the wood. Apply a small amount, let it soak in for a few minutes, then wipe off all the excess.
 
-| a  | b  | c  |
-| :- | :- | :- |
-| 1  | 2  | 3  |
-| 4  | 5  | 6  |
+| **a** | **b** | **c** |
+| :---- | :---- | :---- |
+| 1     | 2     | 3     |
+| 4     | 5     | 6     |
 
 ## 3. String Changes
 
