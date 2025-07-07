@@ -32,3 +32,11 @@
 - ✅ **TASK COMPLETED**: GitHub Actions workflow file created
 - 📣 **INSTRUCTION**: Focus on backup functionality first, email setup later
 - 📝 **NOTE**: User already has 2FA on Gmail - will need app password generation walkthrough
+- ✅ **TASK COMPLETED**: Basic backup workflow working successfully!
+- 📝 **NOTE**: Workflow creates timestamped zip archives (e.g. posts-backup-20250707-215103.zip)
+- 📝 **NOTE**: Fixed parameter name from parent_folder_id to folderId for mathisve/gdrive-upload-action
+- ✨ **SUCCESS**: Backup automation is functional and ready for production use
+- 📣 **INSTRUCTION**: Use webhook instead of email notifications 
+- ✅ **TASK COMPLETED**: Configured Zapier webhook for failure notifications
+- 📝 **NOTE**: Webhook URL: https://hooks.zapier.com/hooks/catch/107299/u3il2z9/
+- 📝 **NOTE**: Webhook sends JSON payload with failure details and logs URL
