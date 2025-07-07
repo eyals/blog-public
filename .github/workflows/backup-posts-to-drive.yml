@@ -26,7 +26,7 @@ jobs:
       with:
         filename: ${{ env.BACKUP_FILE }}
         credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
-        parent_folder_id: ${{ secrets.GDRIVE_FOLDER_ID }}
+        folderId: ${{ secrets.GDRIVE_FOLDER_ID }}
         
   # TODO: Add email notification setup
   # notify-failure:
