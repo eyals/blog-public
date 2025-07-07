@@ -17,7 +17,7 @@ An acoustic guitar is a delicate instrument made of thin sheets of wood held und
 
 You don't need to be a professional luthier to take great care of your instrument. These three areas are where you should focus your attention.
 
-### 1. Humidity Control
+## 1. Humidity Control
 
 \[youtube:n0sKGEgjmuI]
 
@@ -29,15 +29,24 @@ This is the single most important aspect of acoustic guitar care. Most acoustic 
 
 **The Solution:** Keep your guitar in its case when not in use. Use a simple in-case humidifier (like a soundhole humidifier) during dry months and a desiccant pack if you live in a very humid climate. A small digital hygrometer in the case will tell you exactly what the humidity level is.
 
-### 2. Regular Cleaning
+## 2. Regular Cleaning
 
 Sweat, skin oils, and dust can build up on your guitar, dulling the finish and corroding the strings and hardware.
 
+<br />
+
 * **After Every Session:** Use a clean, soft microfiber cloth to wipe down the strings, neck, and body. This simple habit dramatically extends string life and keeps the finish looking new.
+
+<br />
 
 * **During String Changes:** This is the perfect time for a deeper clean. Use a small amount of specialized guitar polish on the body. For the fretboard (if it's unfinished rosewood or ebony), use a fretboard conditioner like lemon oil to clean off grime and hydrate the wood. Apply a small amount, let it soak in for a few minutes, then wipe off all the excess.
 
-### 3. String Changes
+| a  | b  | c  |
+| :- | :- | :- |
+| 1  | 2  | 3  |
+| 4  | 5  | 6  |
+
+## 3. String Changes
 
 Old, dead strings sound dull and can be harder to keep in tune. How often you change them depends on how much you play, but a good rule of thumb is every 1-3 months or whenever they start to look discolored or sound lifeless.
 
