@@ -10,4 +10,4 @@ featured: false
 published: false
 ---
 
-Start writing...
+This is the content of the glog
