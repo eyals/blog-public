@@ -1,15 +1,14 @@
----  
-id: "ecc5"  
-title: "Weekend Project — From an Antique Stereo Console to a Drink Cabinet"  
-slug: "weekend-project--from-an-antique-stereo-console-to-a-drink-cabinet"  
-seo_title: ""  
-excerpt: "Since we moved to the US, my wife fell in love in Mid-Century design. Lucky enough, this kind of furnitures is not hard to find in garage…"  
-image: "1aAe9q_7ErUjCu91wqB0fkA.jpeg"  
-publish_date: "2017-08-14"  
-featured: true  
-published: false  
-  
----  
+---
+id: "ecc5"
+title: "Weekend Project — From an Antique Stereo Console to a Drink Cabinet"
+slug: "weekend-project--from-an-antique-stereo-console-to-a-drink-cabinet"
+seo_title: ""
+excerpt: "Since we moved to the US, my wife fell in love in Mid-Century design. Lucky enough, this kind of furnitures is not hard to find in garage…"
+image: "1aAe9q_7ErUjCu91wqB0fkA.jpeg"
+publish_date: "2017-08-14"
+featured: true
+published: true
+---
 
 Since we moved to the US, my wife fell in love in Mid-Century design. Lucky enough, this kind of furnitures is not hard to find in garage sales around here. So, in one of her Saturday morning tours, she came home with this Silverstone stereo console:
 
