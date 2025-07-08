@@ -1,15 +1,14 @@
----  
-id: "a03c"  
-title: "5 tips to make the most of Google Drive"  
-slug: "5-tips-to-make-the-most-of-google-drive"  
-seo_title: ""  
-excerpt: "I keep my life on Google. It’s probably a bad idea to announce it publicly, aiming the spotlight for hackers, but it’s well known that no…"  
-image: "1e-ema8Eks7roEqrXXfOFNQ.jpeg"  
-publish_date: "2016-04-04"  
-featured: true  
-published: false  
-  
----  
+---
+id: "a03c"
+title: "5 tips to make the most of Google Drive!"
+slug: "5-tips-to-make-the-most-of-google-drive"
+seo_title: ""
+excerpt: "I keep my life on Google. It’s probably a bad idea to announce it publicly, aiming the spotlight for hackers, but it’s well known that no…"
+image: "1e-ema8Eks7roEqrXXfOFNQ.jpeg"
+publish_date: "2016-04-04"
+featured: true
+published: false
+---
 
 **I keep my life on Google. It’s probably a bad idea to announce it publicly, aiming the spotlight for hackers, but it’s well known that no company handles data as good as Google, so why not make use of that?**
 
