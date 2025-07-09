@@ -239,8 +239,8 @@ When the user asks to wrap the feature, follow these steps one by one:
     - List all issues and PRs related to this feature. Most likely there will be 1 issue and 1 PR.
     - Supported formats:
       - `No issue | No PR`
-      - `Issues [62](https://github.com/eyals/gush-backend/issues/62), [63](https://github.com/eyals/gush-backend/issues/62) | PR [93](https://github.com/eyals/gush-backend/pull/93)`
-      - `Issue [62](https://github.com/eyals/gush-backend/issues/62) | No PR`
+      - `Issues [62](https://github.com/user/repo/issues/62), [63](https://github.com/user/repo/issues/62) | PR [93](https://github.com/user/repo/pull/93)`
+      - `Issue [62](https://github.com/user/repo/issues/62) | No PR`
   - **Core files**
     - List the key source files created or modified in this feature. For each file, briefly describe its role or purpose (1 phrase). Group them if it helps (e.g., UI, API, hooks, etc.). Include only implementation files—not plan or scratchpad files.
     - Example format:
@@ -257,12 +257,6 @@ When the user asks to wrap the feature, follow these steps one by one:
     - Include specific implementation decisions, technical solutions, known limitations, UX or API behaviors, and any reusable logic. Avoid general statements like “added X feature” unless accompanied by how/why it works.
     - Think of this section as the TL;DR of the plan, decisions, caveats, and what might help or break if someone builds on this.
     - Pro tip: Include items that answer: What was architecturally interesting? What tradeoffs were made? What’s fragile or tricky? What’s especially reusable?
-    - Examples: "Uses JSONB column for storing voice configuration templates", "Performs slug validation client-side to prevent backend collision", "Extracted ShowEditorForm as a shared component", "Skipped real-time sync due to rate limits (logged as debt)".
-
-### Config backup
-
-- Run /scripts/backup-config.js
-- The script will create a backup of the config table in /supabase/backup/config.csv
 
 ### Git related tasks
 
@@ -273,4 +267,4 @@ When the user asks to wrap the feature, follow these steps one by one:
 - Update the feature index file with the PR link, and commit this change.
 - Shift back to main branch
 - Look for the github issue that was opened for this feature. Add the summary file contents as a comment and close the issue.
-- Delete the feature branch.
+- Merge branch into main and delete the feature branch.
