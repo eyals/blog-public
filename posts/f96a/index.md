@@ -1,15 +1,14 @@
----  
-id: "f96a"  
-title: "3 Tips For Text Labels In VR"  
-slug: "3-tips-for-text-labels-in-vr"  
-seo_title: ""  
-excerpt: "I am working on an experiment around accurate transformation of objects, and part of the accuracy is done by showing the measurements of…"  
-image: "0r7ILZqD4pUQsRwBS.jpg"  
-publish_date: "2017-08-25"  
-featured: true  
-published: false  
-  
----  
+---
+id: "f96a"
+title: "3 Tips For Text Labels In VR"
+slug: "3-tips-for-text-labels-in-vr"
+seo_title: ""
+excerpt: "I am working on an experiment around accurate transformation of objects, and part of the accuracy is done by showing the measurements of…"
+image: "0r7ILZqD4pUQsRwBS.jpg"
+publish_date: "2017-08-25"
+featured: true
+published: true
+---
 
 I am working on an [experiment around accurate transformation of objects](/experiment-accurate-modelling-in-vr-b16cb0395e2b), and part of the accuracy is done by showing the measurements of the transformation.
 
