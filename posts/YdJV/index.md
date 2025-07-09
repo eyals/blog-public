@@ -10,6 +10,12 @@ featured: false
 published: false
 ---
 
+<br />
+
+![youtube](-_6dHIPVoTM)
+
 This is the content of the glog
+
+<br />
 
 And this too
