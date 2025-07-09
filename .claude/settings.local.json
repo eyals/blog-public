@@ -16,7 +16,12 @@
       "Bash(git checkout:*)",
       "Bash(gh pr merge:*)",
       "Bash(git merge:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(git pull:*)",
+      "Bash(npm run build:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(npm run serve:*)"
     ],
     "deny": []
   },
