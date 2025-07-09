@@ -1,15 +1,14 @@
----  
-id: "d647"  
-title: "VR UI Design Pattern — The Tool Palette"  
-slug: "vr-ui-design-pattern--the-tool-palette"  
-seo_title: ""  
-excerpt: "An artist uses only one hand, his dominant one, to paint. This hand always holds the tool confidently, and is always in view."  
-image: "1jbN3C2iW68QzxKRMIfRk8A.jpeg"  
-publish_date: "2017-02-17"  
-featured: true  
-published: false  
-  
----  
+---
+id: "d647"
+title: "VR UI Design Pattern — The Tool Palette"
+slug: "vr-ui-design-pattern--the-tool-palette"
+seo_title: ""
+excerpt: "An artist uses only one hand, his dominant one, to paint. This hand always holds the tool confidently, and is always in view."
+image: "1jbN3C2iW68QzxKRMIfRk8A.jpeg"
+publish_date: "2017-02-17"
+featured: true
+published: true
+---
 
 An artist uses only one hand, his dominant one, to paint. This hand always holds the tool confidently, and is always in view.
 
