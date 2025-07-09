@@ -1,15 +1,14 @@
----  
-id: "0c8e"  
-title: "Experiment: Accurate Modelling in VR"  
-slug: "experiment-accurate-modelling-in-vr"  
-seo_title: ""  
-excerpt: "Everyone in the VR industry says there are no rules. “Run lots of small experiments and see what works”, they say. “Don’t get attached”…"  
-image: "0yBBWe2xYs2-ZVqPW.png"  
-publish_date: "2017-03-23"  
-featured: true  
-published: false  
-  
----  
+---
+id: "0c8e"
+title: "Experiment: Accurate Modelling in VR"
+slug: "experiment-accurate-modelling-in-vr"
+seo_title: ""
+excerpt: "Everyone in the VR industry says there are no rules. “Run lots of small experiments and see what works”, they say. “Don’t get attached”…"
+image: "0yBBWe2xYs2-ZVqPW.png"
+publish_date: "2017-03-23"
+featured: true
+published: true
+---
 
 Everyone in the VR industry says there are no rules. “Run lots of small experiments and see what works”, they say. “Don’t get attached”, they say. So I started a “small” experiment, and ended up spending so many late night hours that I feel like I’m building a product, not an experiment. Yes, I know it’s wrong, but it’s the excitement of learning something new and so magical that makes me feel like I drank a gallon of Redbull, and I can keep going for months.
 
