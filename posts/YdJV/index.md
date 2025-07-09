@@ -15,5 +15,4 @@ published: false
 This is the content of the glog &#x20;
 
 {{youtube:-_6dHIPVoTM}}
-
 And this too
