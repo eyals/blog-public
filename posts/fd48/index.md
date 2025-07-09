@@ -1,15 +1,14 @@
----  
-id: "fd48"  
-title: "Lonely at Burning Man"  
-slug: "lonely-at-burning-man"  
-seo_title: ""  
-excerpt: "Surviving this amazing social event as an introvert — a personal perspective."  
-image: "19i2rLzLF6-yeEzzjtRL66A.jpeg"  
-publish_date: "2015-09-08"  
-featured: true  
-published: false  
-  
----  
+---
+id: "fd48"
+title: "Lonely at Burning Man"
+slug: "lonely-at-burning-man"
+seo_title: ""
+excerpt: "Surviving this amazing social event as an introvert — a personal perspective."
+image: "19i2rLzLF6-yeEzzjtRL66A.jpeg"
+publish_date: "2015-09-08"
+featured: true
+published: true
+---
 
 Surviving this amazing social event as an introvert
 
