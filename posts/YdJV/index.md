@@ -14,8 +14,6 @@ published: false
 
 This is the content of the glog &#x20;
 
-<br />
+{{youtube:-_6dHIPVoTM}}
 
 And this too
-
-{{youtube:411yMnGP5Og}}
