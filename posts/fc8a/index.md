@@ -1,15 +1,14 @@
----  
-id: "fc8a"  
-title: "Why It Makes Total Sense for Apple to Make a TV"  
-slug: "why-it-makes-total-sense-for-apple-to-make-a-tv"  
-seo_title: ""  
-excerpt: "I am not the guy who tries predicting the future just to say “I told you so”, but the idea of Apple selling their own TV sets strikes me as…"  
-image: "1UfW0mioTT2PG6UQ0tlyMug.jpeg"  
-publish_date: "2017-05-21"  
-featured: true  
-published: false  
-  
----  
+---
+id: "fc8a"
+title: "Why It Makes Total Sense for Apple to Make a TV"
+slug: "why-it-makes-total-sense-for-apple-to-make-a-tv"
+seo_title: ""
+excerpt: "I am not the guy who tries predicting the future just to say “I told you so”, but the idea of Apple selling their own TV sets strikes me as…"
+image: "1UfW0mioTT2PG6UQ0tlyMug.jpeg"
+publish_date: "2017-05-21"
+featured: true
+published: true
+---
 
 I am not the guy who tries predicting the future just to say “I told you so”, but the idea of Apple selling their own TV sets strikes me as a logical move in many ways, that I can’t understand how come it’s not happening.
 
