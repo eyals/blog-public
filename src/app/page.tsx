@@ -1,6 +1,6 @@
-import { getSortedPostsData, formatDate } from '@/lib/posts';
-import Link from 'next/link';
-import Image from 'next/image';
+import { getSortedPostsData, formatDate } from "@/lib/posts";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const posts = getSortedPostsData();
@@ -20,9 +20,11 @@ export default function Home() {
           />
         </div>
         <h1 className="font-space-grotesk font-medium text-secondary-title text-slate-700">
-          The Restless 🧠<br />
-          and Impatient 🙌<br />
-          of{' '}
+          The Restless 🧠
+          <br />
+          and Impatient 🙌
+          <br />
+          of{" "}
           <a href="https://ey.al" className="underline hover:no-underline">
             Eyal Shahar
           </a>
@@ -33,11 +35,16 @@ export default function Home() {
         {posts.length > 0 ? (
           <div className="space-y-[60px]">
             {posts.map((post, index) => (
-              <article key={post.id} className="cursor-pointer hover:opacity-80 transition-opacity duration-200">
+              <article
+                key={post.id}
+                className="cursor-pointer hover:opacity-80 transition-opacity duration-200"
+              >
                 <Link href={`/${post.slug}`}>
-                  <div className={`flex flex-col min-[500px]:flex-row ${
-                    index % 2 === 0 ? '' : 'min-[500px]:flex-row-reverse'
-                  } items-start gap-[10vw]`}>
+                  <div
+                    className={`flex flex-col min-[500px]:flex-row ${
+                      index % 2 === 0 ? "" : "min-[500px]:flex-row-reverse"
+                    } items-start gap-[10vw]`}
+                  >
                     {post.image_url && (
                       <div className="min-[500px]:w-1/2 w-full">
                         <Image

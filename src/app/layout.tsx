@@ -1,30 +1,33 @@
-import type { Metadata } from 'next';
-import Script from 'next/script';
-import './globals.css';
+import type { Metadata } from "next";
+import Script from "next/script";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Overtink - The Restless and Impatient',
-  description: 'The blog of Eyal Shahar',
-  authors: [{ name: 'Eyal Shahar', url: 'https://ey.al' }],
+  title: "Overtink - The Restless 🧠 and Impatient 🤲 of Eyal Shahar",
+  description:
+    "A creative blog exploring ideas across user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering.",
+  authors: [{ name: "Eyal Shahar", url: "https://ey.al" }],
   openGraph: {
-    type: 'website',
-    siteName: 'Overtink',
-    title: 'Overtink - The Restless and Impatient',
-    description: 'The blog of Eyal Shahar',
+    type: "website",
+    siteName: "Overtink",
+    title: "Overtink - The Restless 🧠 and Impatient 🤲 of Eyal Shahar",
+    description:
+      "A creative blog exploring ideas across user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering.",
     images: [
       {
-        url: '/overtink-logo.svg',
+        url: "/overtink-logo.svg",
         width: 500,
         height: 500,
-        alt: 'Overtink Logo',
+        alt: "Overtink Logo",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Overtink - The Restless and Impatient',
-    description: 'The blog of Eyal Shahar',
-    images: ['/overtink-logo.svg'],
+    card: "summary_large_image",
+    title: "Overtink - The Restless 🧠 and Impatient 🤲 of Eyal Shahar",
+    description:
+      "A creative blog exploring ideas across user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering.",
+    images: ["/overtink-logo.svg"],
   },
 };
 
@@ -37,7 +40,11 @@ export default function RootLayout({
     <html lang="en" className="text-base">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
@@ -46,9 +53,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
       </head>
       <body className="font-jetbrains-mono text-slate-700 bg-white">
-        <div className="min-h-screen">
-          {children}
-        </div>
+        <div className="min-h-screen">{children}</div>
         <Script
           data-goatcounter="https://eyalblog.goatcounter.com/count"
           src="https://gc.zgo.at/count.js"
