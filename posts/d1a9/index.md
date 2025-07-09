@@ -1,15 +1,14 @@
----  
-id: "d1a9"  
-title: "Samsung Gear VR — Oh, Yes!"  
-slug: "samsung-gear-vr--oh-yes"  
-seo_title: ""  
-excerpt: "I spent a night with 3 young ladies. Ah, no, porn is not there yet. It was a nice night. We started in a small dance club."  
-image: "1WYyruE_dW1lCdyMKrrztOQ.jpeg"  
-publish_date: "2015-12-04"  
-featured: true  
-published: false  
-  
----  
+---
+id: "d1a9"
+title: "Samsung Gear VR — Oh, Yes!"
+slug: "samsung-gear-vr--oh-yes"
+seo_title: ""
+excerpt: "I spent a night with 3 young ladies. Ah, no, porn is not there yet. It was a nice night. We started in a small dance club."
+image: "1WYyruE_dW1lCdyMKrrztOQ.jpeg"
+publish_date: "2015-12-04"
+featured: true
+published: true
+---
 
 My amazing wife got me the Samsung [Gear VR](http://www.samsung.com/us/explore/gear-vr/) for my birthday. I can’t blame her for thinking it was the new edition, which isn’t supposed to be available yet. So, without blaming her, I returned it and ‘pre-ordered’ the new one, and got it sooner than expected.
 
