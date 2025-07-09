@@ -14,7 +14,12 @@
       "Bash(gh pr list --repo eyals/blog-public)",
       "Bash(gh pr view:*)",
       "Bash(git checkout:*)",
-      "Bash(gh pr merge:*)"
+      "Bash(gh pr merge:*)",
+      "Bash(git pull:*)",
+      "Bash(npm run build:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(npm run serve:*)"
     ],
     "deny": []
   },
