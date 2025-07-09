@@ -12,10 +12,6 @@ published: false
 
 <br />
 
-![youtube](-_6dHIPVoTM)
-
-This is the content of the glog
-
-<br />
+This is the content of the glog&#x20;
 
 And this too
