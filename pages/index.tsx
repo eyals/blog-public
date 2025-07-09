@@ -1,5 +1,5 @@
-import { GetStaticProps } from 'next';
-import Head from 'next/head';
+import { GetStaticProps } from "next";
+import Head from "next/head";
 import { getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,15 +7,15 @@ import Image from "next/image";
 // Client-side date formatting function
 function formatDateClient(dateString: string): string {
   const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 }
 
 export const config = {
-  unstable_runtimeJS: false
+  unstable_runtimeJS: false,
 };
 
 interface Post {
@@ -34,20 +34,41 @@ export default function Home({ posts }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Overtink - The Restless and Impatient</title>
-        <meta name="description" content="The blog of Eyal Shahar" />
-        <meta property="og:title" content="Overtink - The Restless and Impatient" />
-        <meta property="og:description" content="The blog of Eyal Shahar" />
+        <title>The Restless 🧠 and Impatient 🙌 of Eyal Shahar</title>
+        <meta
+          name="description"
+          content="A creative blog exploring ideas across design, DIY, user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering."
+        />
+        <meta
+          property="og:title"
+          content="Overtink - The Restless 🧠 and Impatient 🙌 of Eyal Shahar"
+        />
+        <meta
+          property="og:description"
+          content="A creative blog exploring ideas across design, DIY, user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering."
+        />
         <meta property="og:site_name" content="Overtink" />
-        <meta property="og:image" content="http://localhost:3000/overtink-logo.svg" />
+        <meta
+          property="og:image"
+          content="http://localhost:3000/overtink-logo.svg"
+        />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
         <meta property="og:image:alt" content="Overtink Logo" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Overtink - The Restless and Impatient" />
-        <meta name="twitter:description" content="The blog of Eyal Shahar" />
-        <meta name="twitter:image" content="http://localhost:3000/overtink-logo.svg" />
+        <meta
+          name="twitter:title"
+          content="The Restless 🧠 and Impatient 🙌 of Eyal Shahar"
+        />
+        <meta
+          name="twitter:description"
+          content="A creative blog exploring ideas across design, DIY, user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering."
+        />
+        <meta
+          name="twitter:image"
+          content="http://localhost:3000/overtink-logo.svg"
+        />
         <link rel="preload" as="image" href="/overtink-logo.svg" />
       </Head>
       <div className="max-w-6xl mx-auto px-[3vw] py-8">
@@ -83,7 +104,7 @@ export default function Home({ posts }: HomeProps) {
                   key={post.id}
                   className="cursor-pointer hover:opacity-80 transition-opacity duration-200"
                 >
-                  <Link href={`/${post.slug}`}>
+                  <Link href={`${post.slug}`}>
                     <div
                       className={`flex flex-col min-[500px]:flex-row ${
                         index % 2 === 0 ? "" : "min-[500px]:flex-row-reverse"
@@ -92,7 +113,7 @@ export default function Home({ posts }: HomeProps) {
                       {post.image_url && (
                         <div className="min-[500px]:w-1/2 w-full">
                           <Image
-                            src={post.image_url}
+                            src={`${post.slug}/${post.image_url}`}
                             alt={post.title}
                             width={640}
                             height={320}
