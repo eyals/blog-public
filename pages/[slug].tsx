@@ -1,20 +1,20 @@
-import { GetStaticProps, GetStaticPaths } from 'next';
-import Head from 'next/head';
-import { getPostData, getAllPostSlugs } from '@/lib/posts';
-import Link from 'next/link';
-import Image from 'next/image';
+import { GetStaticProps, GetStaticPaths } from "next";
+import Head from "next/head";
+import { getPostData, getAllPostSlugs } from "@/lib/posts";
+import Link from "next/link";
+import Image from "next/image";
 
 // Client-side date formatting function
 function formatDateMonthYearClient(dateString: string): string {
   const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
   });
 }
 
 export const config = {
-  unstable_runtimeJS: false
+  unstable_runtimeJS: false,
 };
 
 interface Post {
@@ -33,25 +33,25 @@ interface PostPageProps {
 }
 
 export default function PostPage({ post }: PostPageProps) {
-  const fullUrl = `https://overtink.com/${post.slug}`;
-  const defaultImage = '/overtink-logo.svg';
+  const fullUrl = `https://overtink.com/${post.slug}/`;
+  const defaultImage = "/overtink-logo.svg";
 
   // JSON-LD structured data
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     headline: post.title,
     author: {
-      '@type': 'Person',
-      name: 'Eyal Shahar',
-      url: 'https://ey.al',
+      "@type": "Person",
+      name: "Eyal Shahar",
+      url: "https://ey.al",
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'Overtink',
+      "@type": "Organization",
+      name: "Overtink",
       logo: {
-        '@type': 'ImageObject',
-        url: 'https://overtink.com/overtink-logo.svg',
+        "@type": "ImageObject",
+        url: "https://overtink.com/overtink-logo.svg",
       },
     },
     datePublished: post.publish_date,
@@ -59,8 +59,8 @@ export default function PostPage({ post }: PostPageProps) {
     ...(post.image_url && { image: post.image_url }),
     ...(post.excerpt && { description: post.excerpt }),
     mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': fullUrl,
+      "@type": "WebPage",
+      "@id": fullUrl,
     },
   };
 
@@ -68,10 +68,10 @@ export default function PostPage({ post }: PostPageProps) {
     <>
       <Head>
         <title>{post.seo_title || post.title}</title>
-        <meta name="description" content={post.excerpt || ''} />
+        <meta name="description" content={post.excerpt || ""} />
         <link rel="canonical" href={fullUrl} />
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt || ''} />
+        <meta property="og:description" content={post.excerpt || ""} />
         <meta property="og:url" content={fullUrl} />
         <meta property="og:image" content={post.image_url || defaultImage} />
         <meta property="og:image:width" content="1200" />
@@ -83,7 +83,7 @@ export default function PostPage({ post }: PostPageProps) {
         <meta property="article:section" content="Technology" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.excerpt || ''} />
+        <meta name="twitter:description" content={post.excerpt || ""} />
         <meta name="twitter:image" content={post.image_url || defaultImage} />
         <script
           type="application/ld+json"
@@ -115,11 +115,13 @@ export default function PostPage({ post }: PostPageProps) {
 
           {/* Author and date */}
           <div className="font-jetbrains-mono text-body text-slate-700 mb-8">
-            By{' '}
+            By{" "}
             <a href="https://ey.al" className="underline hover:no-underline">
               Eyal Shahar
             </a>
-            <span className="ml-5">{formatDateMonthYearClient(post.publish_date)}</span>
+            <span className="ml-5">
+              {formatDateMonthYearClient(post.publish_date)}
+            </span>
           </div>
 
           {/* Main image below date */}
@@ -131,7 +133,7 @@ export default function PostPage({ post }: PostPageProps) {
                 width={800}
                 height={480}
                 className="w-full rounded-lg shadow-lg"
-                style={{ aspectRatio: '5/3', objectFit: 'cover' }}
+                style={{ aspectRatio: "5/3", objectFit: "cover" }}
               />
             </div>
           )}
@@ -160,7 +162,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<PostPageProps> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<PostPageProps> = async ({
+  params,
+}) => {
   const slug = params?.slug as string;
   const post = await getPostData(slug);
 
