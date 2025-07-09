@@ -7,7 +7,7 @@ excerpt: "Since we moved to the US, my wife fell in love in Mid-Century design. 
 image: "1aAe9q_7ErUjCu91wqB0fkA.jpeg"
 publish_date: "2017-08-14"
 featured: true
-published: true
+published: false
 ---
 
 Since we moved to the US, my wife fell in love in Mid-Century design. Lucky enough, this kind of furnitures is not hard to find in garage sales around here. So, in one of her Saturday morning tours, she came home with this Silverstone stereo console:
