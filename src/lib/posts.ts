@@ -57,9 +57,9 @@ export function getSortedPostsData(): PostMetadata[] {
           slug: data.slug || folder,
           published: data.published,
           publish_date: data.publish_date || new Date().toISOString().split('T')[0],
-          excerpt: data.excerpt,
-          image_url: data.image_url || data.image,
-          seo_title: data.seo_title,
+          excerpt: data.excerpt || null,
+          image_url: data.image_url || data.image || null,
+          seo_title: data.seo_title || null,
         });
       }
     } catch (error) {
@@ -110,11 +110,30 @@ export async function getPostData(slug: string): Promise<PostData | null> {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
-  // Process markdown content
+  // Process YouTube embeds before markdown processing
   const processedContent = await remark()
     .use(html)
     .process(content);
-  const contentHtml = processedContent.toString();
+  let contentHtml = processedContent.toString();
+  
+  // Process YouTube embeds after markdown conversion
+  const youtubeRegex = /:::youtube\{id="([^"]+)"(?:\s+start="(\d+)")?\}/g;
+  contentHtml = contentHtml.replace(youtubeRegex, (match, videoId, startTime) => {
+    const embedUrl = startTime 
+      ? `https://www.youtube.com/embed/${videoId}?start=${startTime}`
+      : `https://www.youtube.com/embed/${videoId}`;
+    
+    return `<div class="w-full aspect-[16/9] bg-gray-300">
+<iframe 
+class="w-full h-full" 
+src="${embedUrl}" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen>
+</iframe>
+</div>`;
+  });
 
   return {
     id: data.id || postFolder,
@@ -122,9 +141,9 @@ export async function getPostData(slug: string): Promise<PostData | null> {
     slug: data.slug || postFolder,
     published: data.published,
     publish_date: data.publish_date || new Date().toISOString().split('T')[0],
-    excerpt: data.excerpt,
-    image_url: data.image_url || data.image,
-    seo_title: data.seo_title,
+    excerpt: data.excerpt || null,
+    image_url: data.image_url || data.image || null,
+    seo_title: data.seo_title || null,
     content,
     contentHtml,
   };
