@@ -10,4 +10,4 @@ featured: false
 published: true
 ---
 
-<br />![0.83](0n7WIx4O8TpgKnEG4.webp "the capcap")This is the content of the blog. :::youtube{id="yi9xG76nbUo"}:::youtube{id="yi9xG76nbUo"}\And this toosasdfasadfsdfsd
+<br />![0.83](0n7WIx4O8TpgKnEG4.webp "the capcap")This is the content of the blog. And this toosasdfasadfsdfsd
