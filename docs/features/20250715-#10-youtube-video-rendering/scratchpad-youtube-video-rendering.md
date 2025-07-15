@@ -25,3 +25,6 @@
 - 🧪 **TESTING**: Confirmed responsive 16:9 aspect ratio CSS classes are applied
 - 🧪 **TESTING**: Verified proper iframe security attributes are included
 - 🎉 **COMPLETION**: YouTube video embedding feature is fully functional
+- 🧪 **TESTING**: Created puppeteer tests for YouTube embedding functionality
+- 🐞 **BUG**: Tests show YouTube syntax still visible in dev mode content, but iframe renders correctly
+- 📝 **NOTE**: Development vs production build difference in content processing needs investigation
