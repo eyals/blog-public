@@ -1,13 +1,13 @@
 ---
 id: "YdJV"
 title: "test"
-slug: ""
+slug: "test"
 seo_title: ""
-excerpt: ""
-image: ""
-publish_date: ""
+excerpt: "test"
+image: "0n7WIx4O8TpgKnEG4.webp"
+publish_date: "2025-07-14"
 featured: false
-published: false
+published: true
 ---
 
 <br />
