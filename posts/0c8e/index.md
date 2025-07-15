@@ -16,6 +16,8 @@ This experiment is about accurate modeling in VR. I don’t mean mesh editing, b
 
 Here it is:
 
+:::youtube{id="yi9xG76nbUo"}
+
 ### Transcript:
 
 I’m an interaction designer, experimenting interaction in VR.
