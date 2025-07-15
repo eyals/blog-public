@@ -12,6 +12,6 @@ published: false
 
 <br />
 
-This is the content of the blog. And this too
+![0.83](0n7WIx4O8TpgKnEG4.webp "the capcap")
 
-::iframe{src="<https://www.youtube.com/embed/yi9xG76nbUo?si=kkxGET4OeM9gFpHm>"}
+This is the content of the blog. And this too
