@@ -23,11 +23,12 @@ For the sake of simplicity, I will call the dominant hand ‘Right’ and the no
 Well, like everything in this new industry, there’s no standard, but it usually goes like this:
 
 * Left: Toolbo, xEnvironment options
+
 * Right: Active tool, Tool options
 
 The right hand is also used for operating the tool palette on the left hand.
 
-![](./0RIYrraA4wZRKLkax.png)
+![0.78](./0RIYrraA4wZRKLkax.png "Right vs Left hand")
 
 If we compare it to good old Photoshop, the right hand is our cursor, which changes according to the active tool, but it also holds the top bar with the various tool options. The left hand, is kind of ‘everything else’.
 
@@ -35,7 +36,7 @@ If we compare it to good old Photoshop, the right hand is our cursor, which chan
 
 The tool palette can sit over the user’s left arm. This frees both his hands to interact with objects.
 
-![](./0xWypwnU-yEWbOcKj.jpg)
+![1.00](./0xWypwnU-yEWbOcKj.jpg)
 
 But on creation tools, such as [Medium](https://www.oculus.com/medium/), [Tilt Brush](https://www.tiltbrush.com/) or [Quill](https://www.oculus.com/experiences/rift/1118609381580656/), the user actually holds the tool palette in his left hand. As described above, we mostly use just one hand to create. Probably the only action you need both hands for is to scale objects, so the grip buttons are usually reserved for that. What we earn by sacrificing the left hand is the ability to use the controller keys to reach functions easier. Since the tool palette holds so many functions, the user needs this accessibility.
 
@@ -45,11 +46,11 @@ Since most of the time the tool palette is away from view, it is important to in
 
 TiltBrush are doing a great job, by emphasizing the selected color all over the virtual controller, showing the brush size as a circle, but most importantly — by leaving a fading trail of the selected brush as you wave your controller. This comes in very handy in an app that has tons of brushes, some are animated.
 
-![](./0AZXjEDcTX4Dm72CP.jpg)
+![1.00](./0AZXjEDcTX4Dm72CP.jpg)
 
 Oculus made up tool shapes for each action. Cute, though the tool shape doesn’t always illustrate what it does.
 
-![](./0mPTAOG3efWtwggos.jpg)
+![1.00](./0mPTAOG3efWtwggos.jpg)
 
 ### With One Hand Tied Behind My Back
 
@@ -77,15 +78,15 @@ I’m starting with Medium because I feel they have done the best job so far, as
 
 * Two panels on the tool palette: Layers, and Tools. These panels are on only momentarily, while holding the thumbstick up/down. The same thumbstick is used for Undo (left) and Redo (right).
 
-![](./06dRlEb26ZWkZ_LuY.gif)
+![1.00](./06dRlEb26ZWkZ_LuY.gif)
 
 * As mentioned above — to “behind the back” features: secondary tool, and layer selection mode.
 
-![](./0eJys_2QScrYdyrpI.gif)
+![1.00](./0eJys_2QScrYdyrpI.gif)
 
 * Right-hand panels (tool options, color) are floating in place when opened, and disappear when the pointer leaves them. Having the color picker in the right hand, unlike in most other creation tools, actually makes sense when you look at it as a ‘tool option’. Also note how the laser pointer on these panels goes down instead of straight, since you are pointing with the same hand which opened the panel.
 
-![](./0s8LCbxlwU-e8yRez.gif)
+![1.00](./0s8LCbxlwU-e8yRez.gif)
 
 * To reduce the distraction and functionality in creation mode, a ‘home’ and ‘environment’ buttons are used for additional, less used actions.
 
@@ -93,15 +94,15 @@ I’m starting with Medium because I feel they have done the best job so far, as
 
 * To switch between panels, you flick right/left with your thumbpad
 
-![](./0n7WIx4O8TpgKnEG4.gif)
+![1.00](./0n7WIx4O8TpgKnEG4.gif)
 
 * When a panel has paginated options, use the thumbpad on your pointing hand to scroll through them
 
-![](./0mSQUZwDAqh0Q1i4z.gif)
+![1.00](./0mSQUZwDAqh0Q1i4z.gif)
 
 * Just like in Medium (well, Tilt Brush came first) — use both grips buttons to scale
 
-![](./0Nsjm5nvU6PbPikmu.gif)
+![1.00](./0Nsjm5nvU6PbPikmu.gif)
 
 ### Quillby Oculus (Rift)
 
@@ -109,16 +110,17 @@ Quill’s tool palette feels like an old Mac interface. Gray beveled square butt
 
 * Both hands on Quill are clear of distractions. The right hand shows a dot that represent the color and size of the active tool, and the left hand, the tool palette, is only represented by this tiny purple cube.
 
-![](./0BX7OKiTlRop-tjrz.gif)
+![1.00](./0BX7OKiTlRop-tjrz.gif)
 
 * On the tutorial you learn about the functions of some controller keys, which carry no hint as for their functionality later on. The left hand buttons are for Menu (Y) and for undo (X). The right hand buttons are for Color Picker (A) and Delete (B). Again — not intuitive.
+
 * While most apps use a laser pointer to operate the tool palette, on Quill you need to ‘touch’ the tool palette with your right hand. That’s a bit more effort, but the upside is that you don’t need to dedicate a button for this operation (even though Quill are not using almost any button on the right hand controller, so that’s not the reason).The tool palette does open way closer than the purple dot, to make it easier to reach. The tool changes to a pointer when you get near the palette.
 
-![](./0qShWGlAiL9kYEfGG.gif)
+![1.00](./0qShWGlAiL9kYEfGG.gif)
 
 * Since there are no hints on the right hand, all the tool options are included in the tool palette. The only exception is the brush size, which is set by pushing the righ thumbstick up/down. Once again — you need to remember this from the tutorial, since there is no hint about this.
 
-![](./0PvgWAT0y4fFIJkWR.gif)
+![1.00](./0PvgWAT0y4fFIJkWR.gif)
 
 ### EditorVRby Unity
 
@@ -126,30 +128,31 @@ A very ambitious project in its early days.
 
 * The tool palette resembles the one of Tilt Brush — 4 rotating panels. Opening the palette is quite cumbersome, with now shortcut, and unlike Tilt Brush, users might want to close the palette quite often, since they might operate the various floating objects and panels with both hands.The shortcut for switching between panels is hinted well.Also worth noting that the palette can transform into a different palette. Currently that happens when selecting to add Primitives. Going back to the main palette requires to ‘reopen’ it, again with no shortcut.
 
-![](./0WFkO8MDgFm2kiIC1.gif)
+![1.00](./0WFkO8MDgFm2kiIC1.gif)
 
 * “Trow behind your back” as the gesture for deleting objects. Not related directly to the tool palette, but worth mentioning as a creative way that could minimize the feature load from the tool palette.
 
-![](./03C8_V5PUihwY_ixL.gif)
+![1.00](./03C8_V5PUihwY_ixL.gif)
 
 * The right hand is not exactly the tool options, but more like a contextual menu.The radial menu , which works well in some touch apps, is not very convenient here, since there are too many options and it’s easy to click the wrong option with the thumbstick.The choice to add undo/redo in the object contextual menu is also not clear.
 
-![](./0okJ-0UiJmaSzkKE4.gif)
+![1.00](./0okJ-0UiJmaSzkKE4.gif)
 
 ### Gravity Sketch(Vive/Rift)
 
 * The palette is hidden behind a click on the left thumbstick. That button highlighted in green is the main menu. Gravity Sketch chose to keep almost all options in the palette, and not in the right hand. Even changing the brush size requires two hands.
+
 * Switching between panels is done by flicking the thumbstick left/right, though the design does not clearly imply that.
 
-![](./05V0smlAnwfJCxnbO.gif)
+![1.00](./05V0smlAnwfJCxnbO.gif)
 
 * The color picker did stay on the right hand — again, by clicking the thumbstick.
 
-![](./06DXymoCcy1ICs36v.gif)
+![1.00](./06DXymoCcy1ICs36v.gif)
 
 * A creative way to undo/redo by rotating the thumbstick.
 
-![](./0zXOf0YiwBF2CJoAx.gif)
+![1.00](./0zXOf0YiwBF2CJoAx.gif)
 
 ### Pantheon(Rift)
 
@@ -157,7 +160,7 @@ Pantheon is a product in early beta by few students from UC Berkeley.
 
 * The palette, similar to Quill, is made of few panels, and you need to switch between them by pointing with your right hand. Not the easiest way, but they chose to use the thumbstick for locomotion, so the choices for the panels became limited.
 
-![](./0AVk0vVVq56OFcvmI.gif)
+![1.00](./0AVk0vVVq56OFcvmI.gif)
 
 * One of the things this app lacks the most, is the indication of the selected tool. But as mentioned — it’s an early stage product, and by looking at the quality of the product so far, I am guessing the UX improvements will follow.
 
