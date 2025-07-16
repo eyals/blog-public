@@ -5,7 +5,7 @@ slug: "ux-insights-designing-developer-tools"
 seo_title: "UX Insights for Designing Developer Tools"
 excerpt: "Essential UX principles for designing developer tools, based on hands-on experience leading UX at Google. Practical insights for designers building tools developers actually love."
 image: "growtika-9WnjxT1NCoY-unsplash.jpg"
-publish_date: "2023-05-15"
+publish_date: "2023-05-19"
 featured: false
 published: true
 ---
