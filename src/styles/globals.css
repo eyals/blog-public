@@ -122,14 +122,6 @@ body {
 }
 
 .prose code {
-  background-color: #f3f4f6;
-  padding: 0.125rem 0.25rem;
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.prose pre {
   background-color: #1f2937;
   color: #f9fafb;
   padding: 1rem;
