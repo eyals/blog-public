@@ -163,5 +163,3 @@ Pantheon is a product in early beta by few students from UC Berkeley.
 ![1.00](./0AVk0vVVq56OFcvmI.gif)
 
 * One of the things this app lacks the most, is the indication of the selected tool. But as mentioned — it’s an early stage product, and by looking at the quality of the product so far, I am guessing the UX improvements will follow.
-
-Source: [VR UX Design](http://vrux.design/vr-ui-tool-palette/)
