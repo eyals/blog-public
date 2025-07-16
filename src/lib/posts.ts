@@ -110,11 +110,35 @@ export async function getPostData(slug: string): Promise<PostData | null> {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
-  // Process YouTube embeds before markdown processing
+  // Process markdown first
   const processedContent = await remark()
     .use(html)
     .process(content);
   let contentHtml = processedContent.toString();
+  
+  // Process custom image attributes after markdown processing
+  // Match HTML images with numeric alt text in any attribute order
+  const imageAttrRegex = /<img[^>]*>/g;
+  
+  contentHtml = contentHtml.replace(imageAttrRegex, (imgTag) => {
+    // Extract attributes using individual regex patterns
+    const srcMatch = imgTag.match(/src="([^"]+)"/);
+    const altMatch = imgTag.match(/alt="([0-9]+\.?[0-9]*)"/);
+    const titleMatch = imgTag.match(/title="([^"]*)"/);
+    
+    if (srcMatch && altMatch) {
+      const filename = srcMatch[1];
+      const scale = altMatch[1];
+      const title = titleMatch ? titleMatch[1] : '';
+      
+      const scalePercent = Math.round(parseFloat(scale) * 100);
+      const altText = title || '';
+      
+      return `<img src="${filename}" alt="${altText}" title="${title}" style="width: ${scalePercent}%; height: auto;" class="image-scaled">`;
+    }
+    
+    return imgTag; // Return unchanged if not a numeric alt
+  });
   
   // Process YouTube embeds after markdown conversion
   const youtubeRegex = /:::youtube\{id="([^"]+)"(?:\s+start="(\d+)")?\}/g;

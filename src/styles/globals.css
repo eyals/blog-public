@@ -186,3 +186,19 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
+/* Custom image attributes styling */
+.prose .image-scaled {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive behavior for mobile devices */
+@media (max-width: 768px) {
+  .prose .image-scaled {
+    /* On mobile, limit very large scale factors to prevent overflow */
+    max-width: 100% !important;
+  }
+}
