@@ -108,7 +108,7 @@ export default function Home({ posts }: HomeProps) {
                     <div
                       className={`flex flex-col min-[500px]:flex-row ${
                         index % 2 === 0 ? "" : "min-[500px]:flex-row-reverse"
-                      } items-start gap-[10vw]`}
+                      } items-start gap-[2vw]`}
                     >
                       {post.image_url && (
                         <div className="min-[500px]:w-1/2 w-full">
