@@ -10,6 +10,12 @@ featured: false
 published: false
 ---
 
-![0.83](0n7WIx4O8TpgKnEG4.webp "the capcap")This is the content of the blog.&#x20;
+![0.83](0n7WIx4O8TpgKnEG4.webp "the capcap")
+
+This is the content of the blog.
+
+Testing more scales:
+![0.5](0n7WIx4O8TpgKnEG4.webp "Small version")
+![1.2](0n7WIx4O8TpgKnEG4.webp "Large version")
 
 And this toosasdfasadfsdfsd hllo
