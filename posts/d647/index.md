@@ -28,7 +28,7 @@ Well, like everything in this new industry, there’s no standard, but it usuall
 
 The right hand is also used for operating the tool palette on the left hand.
 
-![0.78](./0RIYrraA4wZRKLkax.png "Right vs Left hand")
+![1.00](./0RIYrraA4wZRKLkax.png)
 
 If we compare it to good old Photoshop, the right hand is our cursor, which changes according to the active tool, but it also holds the top bar with the various tool options. The left hand, is kind of ‘everything else’.
 
