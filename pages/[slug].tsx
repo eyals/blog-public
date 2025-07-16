@@ -38,7 +38,7 @@ export default function PostPage({ post }: PostPageProps) {
   const defaultImage = `${root}overtink-logo.svg`;
   const postImage = `${fullUrl}/${post.image_url}` || defaultImage;
   const postTitle = `${post.title} - Overtink`;
-  const postSeoTitle = `${post.seo_title} - Overtink`;
+  const postSeoTitle = `${post.seo_title || post.title} - Overtink`;
 
   // JSON-LD structured data
   const structuredData = {
@@ -63,7 +63,7 @@ export default function PostPage({ post }: PostPageProps) {
   return (
     <>
       <Head>
-        <title>{postSeoTitle || postTitle}</title>
+        <title>{postSeoTitle}</title>
         <meta name="description" content={post.excerpt || ""} />
         <link rel="canonical" href={fullUrl} />
         <meta property="og:title" content={postTitle} />
