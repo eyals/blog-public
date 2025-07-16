@@ -34,7 +34,7 @@ export default function Home({ posts }: HomeProps) {
   return (
     <>
       <Head>
-        <title>The Restless 🧠 and Impatient 🙌 of Eyal Shahar</title>
+        <title>Overtink - Restless Mind & Impatient Hands - Eyal Shahar</title>
         <meta
           name="description"
           content="A creative blog exploring ideas across design, DIY, user experience, productivity, and everyday problem-solving. Where restless curiosity meets practical tinkering."
@@ -85,11 +85,7 @@ export default function Home({ posts }: HomeProps) {
             />
           </div>
           <h1 className="font-space-grotesk font-medium text-secondary-title text-slate-700">
-            The Restless 🧠
-            <br />
-            and Impatient 🙌
-            <br />
-            of{" "}
+            The Restless 🧠 and Impatient 🙌 of{" "}
             <a href="https://ey.al" className="underline hover:no-underline">
               Eyal Shahar
             </a>

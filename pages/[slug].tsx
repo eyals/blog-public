@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getPostData, getAllPostSlugs } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
+const root = "https://overtink.com/";
 
 // Client-side date formatting function
 function formatDateMonthYearClient(dateString: string): string {
@@ -33,8 +34,8 @@ interface PostPageProps {
 }
 
 export default function PostPage({ post }: PostPageProps) {
-  const fullUrl = `https://overtink.com/${post.slug}/`;
-  const defaultImage = "/overtink-logo.svg";
+  const fullUrl = `${root}${post.slug}/`;
+  const defaultImage = `${root}overtink-logo.svg`;
 
   // JSON-LD structured data
   const structuredData = {
@@ -46,17 +47,9 @@ export default function PostPage({ post }: PostPageProps) {
       name: "Eyal Shahar",
       url: "https://ey.al",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "Overtink",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://overtink.com/overtink-logo.svg",
-      },
-    },
     datePublished: post.publish_date,
     dateModified: post.publish_date,
-    ...(post.image_url && { image: post.image_url }),
+    ...(post.image_url && { image: `${root}${post.image_url}` }),
     ...(post.excerpt && { description: post.excerpt }),
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -67,13 +60,16 @@ export default function PostPage({ post }: PostPageProps) {
   return (
     <>
       <Head>
-        <title>{post.seo_title || post.title}</title>
+        <title>{post.seo_title || post.title} - Overtink</title>
         <meta name="description" content={post.excerpt || ""} />
         <link rel="canonical" href={fullUrl} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt || ""} />
         <meta property="og:url" content={fullUrl} />
-        <meta property="og:image" content={post.image_url || defaultImage} />
+        <meta
+          property="og:image"
+          content={`${root}${post.image_url}` || defaultImage}
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={post.title} />
@@ -84,7 +80,10 @@ export default function PostPage({ post }: PostPageProps) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt || ""} />
-        <meta name="twitter:image" content={post.image_url || defaultImage} />
+        <meta
+          name="twitter:image"
+          content={`${root}${post.image_url}` || defaultImage}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -95,7 +94,7 @@ export default function PostPage({ post }: PostPageProps) {
       <article className="max-w-[45rem] mx-auto px-4 py-8">
         <header className="text-center mb-12">
           {/* Logo at top - links to root */}
-          <div className="mb-[100px]">
+          <div className="mb-[100px] mt-[50px]">
             <Link href="/">
               <Image
                 src="/overtink-logo.svg"
