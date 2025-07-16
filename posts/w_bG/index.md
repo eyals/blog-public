@@ -1,13 +1,13 @@
 ---
 id: "w_bG"
 title: "UX Insights for Designing Developer Tools"
-slug: ""
-seo_title: ""
-excerpt: ""
+slug: "ux-insights-designing-developer-tools"
+seo_title: "UX Insights for Designing Developer Tools"
+excerpt: "Essential UX principles for designing developer tools, based on hands-on experience leading UX at Google. Practical insights for designers building tools developers actually love."
 image: "growtika-9WnjxT1NCoY-unsplash.jpg"
 publish_date: "2023-05-15"
 featured: false
-published: false
+published: true
 ---
 
 Drawing from my experience as the head of UX design for developer-focused tools at Google, specifically Apigee, Google Cloud’s enterprise API management platform, and Intent Lab, Google's advanced NLP platform powering internal tools like Search and Assistant, here are ten critical insights to help you create developer tools that genuinely resonate with and empower your users.
