@@ -1,7 +1,7 @@
 ---
 id: "YdJV"
 title: "This is a Test Post"
-slug: ""
+slug: "this-is-a-test-post"
 seo_title: ""
 excerpt: "test"
 image: "IMG-20191031-223839.jpg"
