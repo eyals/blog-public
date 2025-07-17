@@ -14,6 +14,10 @@ published: false
 
 This is the content of the blog.
 
+![1.00](./1jbN3C2iW68QzxKRMIfRk8A.webp)
+
+![1.00](./zadok-1-5.jpg)
+
 Testing more scales:
 ![0.5](0n7WIx4O8TpgKnEG4.webp "Small version")
 ![1.2](0n7WIx4O8TpgKnEG4.webp "Large version")
