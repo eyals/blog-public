@@ -1,6 +1,6 @@
 ---
 id: "YdJV"
-title: "testah"
+title: "This is a Test Post"
 slug: "test"
 seo_title: ""
 excerpt: "test"
