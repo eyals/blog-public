@@ -4,7 +4,7 @@ title: "This is a Test Post"
 slug: ""
 seo_title: ""
 excerpt: "test"
-image: "./964575-I.jpg"
+image: ""
 publish_date: "2025-07-14"
 featured: false
 published: false
